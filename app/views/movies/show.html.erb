@@ -6,22 +6,19 @@
 
     <div>
       <div>
-        <a href=<%= movies_path %>>
-          Movie List
-        </a>
-      </div>
+        <%= link_to "Movie List", movies_path %>
+      <div>
+      <div>
+        <%= link_to "Add New Movie", new_movie_path %>
+      <div>
 
       <div>
-        <a href=<%= edit_movie_path(@the_movie) %>>
-          Edit movie
-        </a>
-      </div>
+        <%= link_to "Edit Movie", edit_movie_path(@the_movie) %>
+      <div>
 
       <div>
-        <a href= <%= delete_movie_path(@the_movie) %> data-method="delete">
-          Delete movie
-        </a>
-      </div>
+        <%= link_to "Delete Movie", delete_movie_path(@the_movie) %>
+      <div>
     </div>
 
     <dl>
